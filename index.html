@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Notepad JavasSript</title>
+
+    <!--This is the CSS-->
+    
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--This is the script-->
+    <script src="./js/note.js"></script> 
+</head>
+
+<body>
+    <section class="container">
+        
+        <div class="row no-gutters justify-content-center">
+            <div class="col-md-8">
+        <div class="editor">
+            <h1>Notepad</h1>
+            <p>First notepad project</p>
+        </div>
+        
+        <div id="area">
+            <div class="float-md-left">
+        <select id="font-1" onchange="changeFont(this)">
+
+            <option>Fonts</option>
+            <option  value="Arial">Arial</option>
+            <option  value=" Times New Roman">Times New Roman</option>
+            <option  value=" Helvetica">Helvetica</option>
+            <option  value="Times">Times</option>
+            <option  value="Courier New">Courier New</option>
+            <option  value="Verdana">Verdana</option>
+            <option  value="Courier">Courier</option>
+            <option  value="Arial Narrow">Arial Narrow</option>
+            <option  value="Candara">Candara</option>
+            <option  value="Geneva">Geneva</option>
+            <option  value="Calibri">Calibri</option>
+            <option  value="Perpetua">Perpetua</option>
+            <option  value="Monaco">Monaco</option>
+            <option  value="Didot">Didot</option>
+            <option  value="Brush Script MT">Brush Script MT</option>
+            <option  value="Lucida Bright">Lucida Bright</option>
+            <option  value="Copperplate">Copperplate</option>
+            
+        </select>
+
+        <select id="expanse" onchange="changeSize(this)">
+            <option>Fonts Size</option>
+            <option value='10'>10px</option>
+            <option value='12'>12px</option>
+            <option value='14'>14px</option>
+            <option value='16'>16px</option>
+            <option value='18'>18px</option>
+            <option value='20'>20px</option>
+            <option value='22'>22px</option>
+            <option value='24'>24px</option>
+            <option value='26'>26px</option>
+            <option value='28'>28px</option>
+            <option value='30'>30px</option>
+            <option value='32'>32px</option>
+            <option value='34'>34px</option>
+            <option value='36'>26px</option>
+            <option value='38'>38px</option>
+            <option value='40'>40px</option>
+            <option value='44'>44px</option>
+            <option value='48'>48px</option>
+            <option value='52'>52px</option>
+            <option value='56'>56px</option>
+
+          </select>
+        </div>
+        <!---
+        <select id="color1" onchange="changeColor(this)">
+
+            <option>--Colors--</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+            <option value="yellow">Yellow</option>
+            <option value="brown">Brown</option>
+            <option value="aqua">Aqua</option>
+           
+        </select>
+        -->
+        <div class="float-md-right" style="margin-bottom: 10px;">
+        <button><i class="fa fa-bold" aria-hidden="true" id="boldBtn" onclick="bold()"></i></button>
+
+        <button><i class="fa fa-italic" aria-hidden="true" id="itaBtn" onclick="italic()"></i></button>
+
+        <button><i class="fa fa-underline" aria-hidden="true" id="uliBtn" onclick="uline()"s></i></button>
+         
+        
+        <button  id="btnAdd">Add Note</button>
+        </div>
+
+    </div>      
+
+
+        <!--This is the text area-->
+    
+        <form class="form-group">
+         
+            <input  type="text" placeholder="Titles"  class="form-control" id="title">
+            <br>
+              <textarea  placeholder="Enter your text...."   rows="20" id="boxTxt"></textarea>
+
+        </form>  
+  
+     <div id="area2">
+            <button onclick="clearTxt()">Clear</button>
+             
+            
+            <button onclick="resetTxt()">Reset</button>
+
+        </div>   
+        
+    </div>
+    </div>
+    <br><hr>
+
+    <h2>Your Added Note</h2>
+    <br>
+    <div id="note" class="row justify-content-center">  </div>  
+         <!-- end of container-->
+    </section>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.7.1/spectrum.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js'></script>
+</html>

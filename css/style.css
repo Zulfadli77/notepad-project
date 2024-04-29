@@ -1,0 +1,135 @@
+body{
+	background-color: antiquewhite;
+}
+.container{
+	place-items: center;
+	width: 85%;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 3%;
+}
+
+h1{
+	color: #f3dd14;
+	background-color: rgb(92, 106, 138);
+	border: #5d67f1 solid 3px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+	font-size: 60px;
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #5d67f1;
+	font-size: 40px;
+	text-shadow: 0 0 3px #f3dd14;
+	text-decoration: underline;
+}
+
+p{
+	font-size: 20px;
+	text-align: center;
+	background-color: aliceblue;
+	border-bottom: #5d67f1 solid 3px;
+	border-left:#5d67f1 solid 3px; 
+	border-right: #5d67f1 solid 3px;
+	margin: 0;
+	padding: 0;	
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.editor{
+    display:grid;
+	margin:10px 0 10px 0;
+}
+
+.editor #font-1, #area, #area2, #expanse{
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+#area{
+	margin:0 0 10px 0;
+}
+
+#area2{
+	margin:  0;
+	text-align: center;
+}
+.row .col-sm-6{
+	display: grid;
+	place-items: center;
+}
+
+.row button{
+	color: black;
+	background-color: #f3dd14;
+	border-radius: solid 2px;
+	font:15px;
+}
+
+.row button:hover{
+	background-color:#5d67f1;
+	color: white;
+}
+
+.form-group input{
+	border: #5d67f1 solid 3px;
+	background-color:#dddddd;
+	width: 100%;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+#boxTxt {
+	border: #5d67f1 solid 3px;
+	background-color:#dddddd;
+	width: 100%;
+	height: 300px;
+	text-align: justify;
+	line-height: 1.5em;
+  }
+
+
+#title, #boxTxt {
+	font-size: 18px;
+}
+
+#newNote{
+	margin: 30px 0 0 0;
+}
+
+#note p{
+	font-size: 20px;
+	color: black;
+	background-color: lightgrey;
+	border: lightgrey solid 2px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#note{
+	color: blue;
+	font:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size:18px ;
+	
+}
+
+.card button{
+	margin-top: 10px;
+}
+
+
+@media screen and (max-width:900px) {
+	.float-md-left{
+		text-align: center;
+	}
+
+	.float-md-right{
+		text-align: center;
+	}
+}
